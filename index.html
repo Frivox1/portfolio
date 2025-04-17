@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
@@ -42,9 +43,54 @@
   <!-- Projects Section -->
   <section class="projects">
     <h2 class="section-title-left">Projects<span class="dot">.</span></h2>
+    
+    <div class="project-cards-container">
+      <!-- RememberMe App -->
+      <div class="project-card">
+        <div class="card-content">
+          <h3>RememberMe App</h3>
+          <p>An intuitive mobile app to help users remember birthdays and special events. Built with Flutter and Dart, it offers a seamless experience on both iOS and Android.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" class="website-link">
+                Visit Website<i data-lucide="arrow-right" class="arrow-icon"></i>
+            </a>
+          </div>
+          <div class="project-images">
+            <img src="images/rememberme.png" alt="RememberMe Screenshot 1">
+            <img src="images/reminder.PNG" alt="RememberMe Screenshot 2">
+          </div>
+        </div>
+      </div>
+  
+      <!-- TicTrack Website -->
+      <div class="project-card">
+        <img src="images/tic_track_website.png" alt="TicTrack Project" class="card-banner">
+        <div class="card-content">
+          <h3>Tic Track Website</h3>
+          <p>The website for my Tic Track project. It showcases the features and functionalities of the Tic Track application, which is a desktop app to manage with ease your tasks and projects.</p>
+          <div class="project-links">
+            <a href="https://github.com/Frivox1/tic_track_website" target="_blank" class="icon-link">
+              <i class="devicon-github-original"></i>
+            </a>
+            <a href="#" target="_blank" class="website-link">
+                Visit Website<i data-lucide="arrow-right" class="arrow-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="see-all">
+      <a href="projects.html" class="btn secondary">See all projects →</a>
+    </div>
+  </section>
+  
+
+  <!-- Projects Section Bento grid -->
+  <!-- <section class="projects">
+    <h2 class="section-title-left">Projects<span class="dot">.</span></h2>
   
     <div class="bento-grid">
-      <!-- Ligne 1 -->
       <div class="bento-item small">
         <div class="project-box">
           <img src="images/rememberme.png" alt="Project 1">
@@ -58,7 +104,6 @@
         <p class="project-text">Tic Track Website</p>
       </div>
     
-      <!-- Ligne 2 -->
       <div class="bento-item large">
         <div class="project-box">
           <img src="images/page_rank.png" alt="Project 3">
@@ -76,7 +121,7 @@
     <div class="see-all">
       <a href="projects.html" class="btn secondary">See all projects →</a>
     </div>
-  </section>
+  </section> -->
 
   <!-- Skills Section -->
 <section class="swimlane row">
@@ -120,5 +165,8 @@
     </div>
   </footer>
 
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
